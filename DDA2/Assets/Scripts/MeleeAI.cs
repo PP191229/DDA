@@ -11,6 +11,8 @@ public class MeleeAI : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
 
+    public int health;
+
     public bool canSeePlayer;
 
     // Start is called before the first frame update
@@ -30,6 +32,11 @@ public class MeleeAI : MonoBehaviour
         movement = direction;
 
         Debug.DrawRay(transform.position, Vector2.right, Color.black);
+
+        if (health < 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void FixedUpdate()

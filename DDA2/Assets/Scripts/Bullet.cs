@@ -16,13 +16,15 @@ public class Bullet : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<MeleeAI>().health--;
             dda.enemiesRanged++;
         }
 
         if (collision.gameObject.tag == "RangeEnemy")
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<RangeEnemie>().health--;
+            collision.gameObject.GetComponent<RangeAI>().health--;
+
 
             dda.enemiesRanged++;
         }

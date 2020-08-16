@@ -11,6 +11,8 @@ public class RangeEnemie : MonoBehaviour
     public GameObject projectile, bulletSpawn;
     public Transform player;
 
+    public int health;
+
     private float timeBtwShots;
     public float startTimeBtwShots;
 
@@ -46,6 +48,11 @@ public class RangeEnemie : MonoBehaviour
         else
         {
             timeBtwShots -= Time.deltaTime;
+        }
+
+        if (health<0)
+        {
+            Destroy(gameObject);
         }
     }
 }

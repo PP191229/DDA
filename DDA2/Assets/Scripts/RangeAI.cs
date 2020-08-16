@@ -17,6 +17,7 @@ public class RangeAI : MonoBehaviour
 
     public bool canSeePlayer;
 
+    public int health;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,10 @@ public class RangeAI : MonoBehaviour
 
         Debug.DrawRay(transform.position, Vector2.right, Color.black);
 
+        if (health < 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void FixedUpdate()

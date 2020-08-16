@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DDA : MonoBehaviour
 {
-    public float enemiesRanged;
+    public float enemiesRanged, enemiesMeleed;
     public GameObject[] rangeEnemies;
     public GameObject[] meleeEnemies;
 
@@ -35,6 +35,7 @@ public class DDA : MonoBehaviour
         if (timer2 < 0)
         {
             RangedChange();
+            MeleedChange();
         }
 
     }
@@ -44,12 +45,27 @@ public class DDA : MonoBehaviour
         rangeEnemies = GameObject.FindGameObjectsWithTag("RangeEnemy");
         meleeEnemies = GameObject.FindGameObjectsWithTag("Enemy");
 
-        if (enemiesRanged > 0)
+        if (enemiesRanged > enemiesMeleed)
         {
             foreach (GameObject script in rangeEnemies)
             {
                 script.GetComponent<RangeAI>().enabled = false;
                 script.GetComponent<RangeEnemie>().enabled = true;
+            }
+        }
+    }
+
+    void MeleedChange()
+    {
+        rangeEnemies = GameObject.FindGameObjectsWithTag("RangeEnemy");
+        meleeEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        if (enemiesMeleed > enemiesRanged)
+        {
+            foreach (GameObject script in rangeEnemies)
+            {
+                script.GetComponent<MeleeAI>().health = 2;
+
             }
         }
     }

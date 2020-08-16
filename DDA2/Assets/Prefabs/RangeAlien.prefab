@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1783816823454516861}
   - component: {fileID: 1783816823454516862}
   - component: {fileID: 1783816823454516848}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: RangeAlien1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1783816823939154307}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 1783816824827253167}
   - component: {fileID: 1783816824827253152}
   - component: {fileID: 4670167532835009088}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: RangeAlien
   m_TagString: RangeEnemy
   m_Icon: {fileID: 0}

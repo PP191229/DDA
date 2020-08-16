@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 530473685572370160}
   - component: {fileID: 530473685572370163}
   - component: {fileID: 530473685572370162}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Spider
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -48,6 +48,7 @@ MonoBehaviour:
   player: {fileID: 492604469992779413, guid: 91db5e8407de97b4b95bbce71ee24bd5, type: 3}
   speed: 3
   sight: 1
+  health: 1
   canSeePlayer: 0
 --- !u!50 &530473685572370162
 Rigidbody2D:
@@ -81,7 +82,7 @@ GameObject:
   - component: {fileID: 530473685775448063}
   - component: {fileID: 530473685775448062}
   - component: {fileID: 530473685775448035}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Spider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
