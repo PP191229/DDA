@@ -6819,6 +6819,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5717634565517927348, guid: 4fa4e804e0f9fda4382a42ce0f36c7e1,
+        type: 3}
+      propertyPath: boundary
+      value: 
+      objectReference: {fileID: 9150184657623913207}
     - target: {fileID: 7910589226350521086, guid: 4fa4e804e0f9fda4382a42ce0f36c7e1,
         type: 3}
       propertyPath: m_Name
@@ -6829,6 +6834,12 @@ PrefabInstance:
 --- !u!4 &8428534881698687204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2123893811095321017, guid: 4fa4e804e0f9fda4382a42ce0f36c7e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 7602566529671958877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9150184657623913207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1691736687714501546, guid: 4fa4e804e0f9fda4382a42ce0f36c7e1,
     type: 3}
   m_PrefabInstance: {fileID: 7602566529671958877}
   m_PrefabAsset: {fileID: 0}

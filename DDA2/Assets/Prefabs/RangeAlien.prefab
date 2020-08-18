@@ -215,6 +215,7 @@ MonoBehaviour:
   timer: 0
   sight: 1
   canSeePlayer: 1
+  health: 0
 --- !u!114 &4670167532835009088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,10 +228,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4ad536d36046f64f980b68d2f4ebf8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  stoppingDistance: 0
-  retreatDistance: 0
-  projectile: {fileID: 0}
-  bulletSpawn: {fileID: 0}
+  speed: 5
+  stoppingDistance: 5
+  retreatDistance: 5
+  projectile: {fileID: 3984302709838884090, guid: 49a79d36b8f9fc844b7f1560c89db119,
+    type: 3}
+  bulletSpawn: {fileID: 1783816823939154308}
   player: {fileID: 0}
-  startTimeBtwShots: 0
+  health: 1
+  startTimeBtwShots: 1
